@@ -2,9 +2,8 @@
 
 
 //generating README file
-const generateMarkdown = require('./generateMarkdown');
-const fs = require('fs');
 const  inquirer = require('inquirer');
+const fs = require('fs');
 const generateReadMe = ({title, description, installation, usage, contributions, test, licenses, github, email}) =>
 
 `## Title
@@ -104,7 +103,7 @@ inquirer
             message: 'What is your email address?',
           }
         ])
-        .then((answer) => {
+        .then(answer => {
           
             const readMePageContent = generateReadMe(answer);
         
