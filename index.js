@@ -4,57 +4,10 @@
 //generating README file
 const  inquirer = require('inquirer');
 const fs = require('fs');
-const generateReadMe = ({title, description, installation, usage, contributions, test, licenses, github, email}) =>
+const generateMarkdown = require('./generateMarkdown');
 
-`## Title
-${title}\n
-
-## Description
-
-${description}\n
-
-## Table of Contents
-
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributions](#contributions)
-* [Test](#tests)
-* [License](#license)
-* [GitHub](#github)
-* [Email Address](#emailaddress)
-
-## Installation
-
-${installation}\n
-
-## Usage
-
-${usage}\n
-
-## License
-
-${licenses}\n
-
-## Badges
-
-![${badges}](https://img.shields.io/github/languages/top/${github}/${badges})
-
-## Contribute
-
-${contributions}\n 
-
-## Test
-
-${test}\n
-
-### Contact
-
-GitHub: https://github.com/${github}\n
-Email Address: ${email}\n`;
-
-//An array of questions for user input
-inquirer
+const questions = () => {
+  inquirer
     .prompt = ([
         {
             type: 'input',
@@ -63,7 +16,7 @@ inquirer
           },
           {
             type: 'input',
-            message: 'Describe what the project is about',
+            message: 'What is the project about?',
             name: 'description',
           },
           {
@@ -79,16 +32,16 @@ inquirer
           {
             type: 'input',
             name: 'contributions',
-            message: 'Provide guidelines of contributions.',
+            message: 'What are the guidelines of contributions you can provide?',
           },
           {
             type: 'input',
             name: 'test',
-            message: 'Please add instructions on how to test the project',
+            message: 'What are the instructions to test the project?',
           },
           {
             type: 'input',
-            name: 'licenses',
+            name: 'badges',
             message: 'What licenses is the application covered under?',
             choices: ['MIT', 'Apache', 'BSD'],
           },
@@ -101,21 +54,29 @@ inquirer
             type: 'input',
             name: 'email address',
             message: 'What is your email address?',
-          }
-        ])
-        .then(answer => {
-          
-            const readMePageContent = generateReadMe(answer);
-        
-            fs.writeFile('README.md', readMePageContent, (err) =>
-              err ? console.log(err) : console.log('Successfully created README.md file!')
-            );
-          });
+          },
+    ]);
+};
 
+function writeFile (fileName, data) {
 
+  fs.writeFile(fileName, data, (err) =>
+      err ? console.log(err) : console.log('Successfully created README.md!')
+)};
 
-// TODO: Create a function to initialize app
-function init() {}
+// TODO: Create a function to initialize appg
+function init (generateMarkdown) {
+  questions().then((answers) => {
+    const readMePageContent = generateMarkdown(answers);
 
+    fs.writeFile('README.md', readMePageContent, (err) =>
+      err ? console.log(err) : console.log('Successfully wrote on README.md!')
+    );
+  }
+  )};
 // Function call to initialize app
-init(generateReadMe);
+init
+
+
+
+ 
