@@ -52,7 +52,7 @@ ${answer.licenses}\n
 
 ## Badges
 
-![${answer.badges}](https://img.shields.io/github/languages/top/${answer.github}/${answer.badges})
+![${answer.badges}](https://img.shields.io/github/license/top/${answer.github}/${answer.badges})
 
 ## Contribute
 
