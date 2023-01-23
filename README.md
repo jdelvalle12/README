@@ -1,10 +1,9 @@
-## Title
-undefined
+## README
 
 
 ## Description
 
-undefined
+generating a README file for a project
 
 
 ## Table of Contents
@@ -20,17 +19,17 @@ undefined
 
 ## Installation
 
-undefined
+using node.js, package.json, npm install 8.2.4.
 
 
 ## Usage
 
-undefined
+creating a README file to input the details about the project
 
 
 ## License
 
-undefined
+for now only MIT
 
 
 ## Badges
@@ -39,16 +38,18 @@ undefined
 
 ## Contribute
 
-undefined
+provide steps on creating the project
  
 
 ## Test
 
-undefined
+test the functions before deploying the application
 
 
 ### Contact
 
-GitHub: https://github.com/undefined
+GitHub: https://github.com/jdelvalle12
 
-Email Address: undefined
+Email Address: jdelvalle88@live.com
+
+![image](https://user-images.githubusercontent.com/104731082/213958467-7b959def-f0ec-4e91-8a3c-67234af6a581.png)
