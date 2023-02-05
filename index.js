@@ -56,7 +56,7 @@ inquirer
           },
       ])
     .then((answers) => {
-    const readMeContent = generateMarkdown(answers);
+    const readMeContent = function generateMarkdown(answers);
     fs.writeFile('README.md', readMeContent, (err) =>
     err ? console.log(err) : console.log('Successfully created README.md!')
   );
