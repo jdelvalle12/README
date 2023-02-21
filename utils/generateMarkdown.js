@@ -67,5 +67,4 @@ Email Address: ${email}\n`;
 
 };
 
-module.exports = generateMarkdown();
-module.exports = renderLicenseBadge();
+module.exports = generateMarkdown;
