@@ -52,3 +52,8 @@ Run node a couple of times, test before deploying the project
 
 GitHub: https://github.com/https://github.com/jdelvalle12
 Email Address: jdelvalle88@live.com
+
+
+Video Link - https://drive.google.com/file/d/10npzCYisjEmVTPCPHMWCbZ1h5xC7QKHY/view
+
+
