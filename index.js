@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const  inquirer = require('inquirer');
-const fs = require('fs');
+const fs= require('fs');
 // const utils = require('utils');
 const generateMarkdown = require('./utils/generateMarkdown');
 
@@ -39,7 +39,7 @@ const questions = [
           },
           {
             type: 'input',
-            name: 'badges',
+            name: 'license',
             message: 'What licenses is the application covered under?',
             choices: ['MIT', 'Apache', 'BSD'],
           },
@@ -50,11 +50,11 @@ const questions = [
           },
           {
             type: 'input',
-            name: 'email address',
+            name: 'email',
             message: 'What is your email address?',
           },
-      ]
-      //Create a function to write a README file
+      ];
+      // Create a function to write a README file
       function writeToFile (fileName, data) {
       fs.writeFile(fileName, data, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')

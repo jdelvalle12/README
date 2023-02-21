@@ -1,10 +1,11 @@
 # Title
-[object Object]
+
+README
 
 
 ## Description
 
-undefined
+The project is about creating a README
 
 
 ## Table of Contents
@@ -20,35 +21,34 @@ undefined
 
 ## Installation
 
-undefined
+It was installed using npm i, node.js, & npm i inquirer
 
 
 ## Usage
 
-undefined
+It is used as a demo to show how to create a README using inquirer
 
 
 ## License
 
-undefined
+MIT
 
 
 ## Badges
 
-![undefined](https://img.shields.io/github/license/top/undefined/undefined)
+![undefined](https://img.shields.io/github/license/top/https://github.com/jdelvalle12/undefined)
 
 ## Contribute
 
-undefined
+As a sole author, providng the codes to create a README
  
 
 ## Test
 
-undefined
+Run node a couple of times, test before deploying the project
 
 
 ### Contact
 
-GitHub: https://github.com/undefined
-
-Email Address: undefined
+GitHub: https://github.com/https://github.com/jdelvalle12
+Email Address: jdelvalle88@live.com
